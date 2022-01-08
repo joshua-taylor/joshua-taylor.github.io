@@ -406,7 +406,7 @@ if (splash == 1){  //only do this if on the spash screen
 //clicking the splash screen get started button removes the splash screen and adds interactivity.
 d3.select("button").on('click', (event) => {
   addLegend(); //add the ledgend
-  console.log('alpha target is 0, velocity decay is 0.8, alpha decay is 0.005')
+  console.log('alpha target is 0, velocity decay is 0.8, alpha decay is 0.005, x and y force =2')
   var splash = 0;
   var splashDiv = document.getElementById("splashDiv")
   svg.selectAll("circle")
@@ -428,8 +428,8 @@ d3.select("button").on('click', (event) => {
 var transitionTime = 3000; //for ramping up forces gradually
 var t = d3.timer(function (elapsed) {
   var dt = elapsed / transitionTime;
-  sim.force('x').strength(dt);
-  sim.force('y').strength(dt);
+  sim.force('x').strength(dt*2);
+  sim.force('y').strength(dt*2);
   if (dt >= 1.0) t.stop();
 });
 });
