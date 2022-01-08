@@ -422,8 +422,8 @@ d3.select("button").on('click', (event) => {
   .force('charge', d3.forceManyBody().strength(0));
   sim
   .alphaTarget(0) // converge
-  .alphaDecay(0.0005) //slow convergance
-  .velocityDecay(0.85) // friction
+  .alphaDecay(0.0007) //slow convergance
+  .velocityDecay(0.9) // friction
     .restart();
 // var transitionTime = 3000; //for ramping up forces gradually
 // var t = d3.timer(function (elapsed) {
