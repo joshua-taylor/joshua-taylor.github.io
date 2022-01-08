@@ -421,7 +421,7 @@ d3.select("button").on('click', (event) => {
   .force('charge', d3.forceManyBody()).strength(0));
   sim
   .alphaTarget(0) // stay hot
-  .velocityDecay(0.95) // friction
+  .velocityDecay(0.9) // friction
     .restart();
 });
 
