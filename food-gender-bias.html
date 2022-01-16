@@ -92,6 +92,7 @@
   <div>
     <h1 class="header">Gender Bias</h1>
     <p class="subheader">What an analysis of all UK restaurant names can tell us about ingrained gender bias</p>
+    <a href="#help">What is this showing?</a>
   </div>
   <div class="row content">
     <div id="labelDiv" class="divLabel" ></div>
@@ -103,7 +104,20 @@ Click on the circles to show a selection of restaurant names which contain the w
     <button id="button" type="button" class="btn btn-outline-light btn-lg">Click to explore</button></div>
       <div id="wrapper"class="col-lg-12"></div>
 </div>
-
+<div class="row content",id="help">
+  <p class="subheader">What is this showing?</p>
+  <p>This chart analyses words used in restaurant names. Words used more
+    frequently in conjunction with male names will move to the left of the chart 
+    and the opposite will occur for words used in female restaurant names.</p>
+   <p>The approach to obtain this information is as follows:
+    <ol>
+      <li>Restaurants with male or female names have been taken from the full list of all UK restaurant names (for example, “Bob’s Burger Grill” or “Sue’s Bakery”).</li>
+      <li>For these restaurants, the words are then weighted as male or female dependant on the gender of the restaurant itself (for example, the words “Burger” and “Grill” would be weighted as masculine and “Bakery” femanine in the example above).</li>
+      <li>These weights are then aggregated across all restaurant names, this uncovers words that are heavily weighted as male and female.</li>
+      <li>This chart is then showing the most common of these words.</li>
+    </ol>
+  </p>
+</div>
 <footer class="container-fluid text-center tip">
   <p><a href = "https://www.linkedin.com/in/josh-taylor-24806975"><u>Josh Taylor 2022</u></a></p>
 </footer>
